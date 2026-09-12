@@ -327,3 +327,7 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md) for development setup, building from so
 - Discord: [Join the Community](https://discord.gg/honcho)
 - X (Twitter): [Follow @honchodotdev](https://x.com/honchodotdev)
 - Blog: [Read about Honcho and Agents](https://blog.plasticlabs.ai)
+
+## Existing self-hosted human peer
+
+Set HONCHO_OWNER_PEER_ID in the Gateway environment (or its .env file) to reuse an existing human peer, such as edgar. Unset or blank values keep the default owner peer. Restart the Gateway after changing this variable. This does not change agent peer mappings or migrate existing messages.

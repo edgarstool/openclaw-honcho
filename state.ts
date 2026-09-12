@@ -15,7 +15,7 @@ import {
   resolveParticipantPeerId,
 } from "./peers.js";
 
-export const OWNER_ID = "owner";
+export const OWNER_ID = process.env.HONCHO_OWNER_PEER_ID?.trim() || "owner";
 export const LEGACY_PEER_ID = "openclaw";
 
 export const HONCHO_CLOUD_HOSTNAME = "api.honcho.dev";
